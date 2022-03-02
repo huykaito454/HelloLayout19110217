@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LayoutActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProduc1"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardProduct3"
+            app:layout_constraintEnd_toStartOf="@+id/cardProduct2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgBag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/imgBag"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/bag" />
+
+            <TextView
+                android:id="@+id/txtBag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vagabond sack"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationX="20dp"
+                android:translationY="120dp" />
+
+            <TextView
+                android:id="@+id/txtPriceBag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 120"
+                android:textColor="@color/money"
+                android:textSize="13sp"
+                android:translationX="20dp"
+                android:translationY="150dp" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProduct2"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardProduct4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardProduc1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtPriceGlass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 58"
+                android:textColor="@color/money"
+                android:textSize="13sp"
+                android:translationX="20dp"
+                android:translationY="150dp" />
+
+            <TextView
+                android:id="@+id/txtGlass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stella sunglasses"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationX="20dp"
+                android:translationY="120dp" />
+
+            <ImageView
+                android:id="@+id/imgGlass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/sunglass" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProduct3"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="266dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="265dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardProduct4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtPriceBelt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 35"
+                android:textColor="@color/money"
+                android:textSize="13sp"
+                android:translationX="20dp"
+                android:translationY="150dp" />
+
+            <TextView
+                android:id="@+id/txtBelt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whitney belt"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationX="20dp"
+                android:translationY="120dp" />
+
+            <ImageView
+                android:id="@+id/imgBelt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/belt" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProduct4"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="226dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="225dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardProduct3"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtPriceRing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 98"
+                android:textColor="@color/money"
+                android:textSize="13sp"
+                android:translationX="20dp"
+                android:translationY="150dp" />
+
+            <TextView
+                android:id="@+id/txtRing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Garden strand"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationX="20dp"
+                android:translationY="120dp" />
+
+            <ImageView
+                android:id="@+id/imgRing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/ring" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProduct5"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardProduct6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardProduct3" >
+
+            <TextView
+                android:id="@+id/txtPriceThing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 120"
+                android:textColor="@color/money"
+                android:textSize="13sp"
+                android:translationX="20dp"
+                android:translationY="150dp" />
+
+            <TextView
+                android:id="@+id/txtThing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thing"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationX="20dp"
+                android:translationY="120dp" />
+
+            <ImageView
+                android:id="@+id/imgThing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/thing" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProduct6"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardProduct5"
+            app:layout_constraintTop_toBottomOf="@+id/cardProduct4" >
+
+            <TextView
+                android:id="@+id/txtPriceSock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 120"
+                android:textColor="@color/money"
+                android:textSize="13sp"
+                android:translationX="20dp"
+                android:translationY="150dp" />
+
+            <TextView
+                android:id="@+id/txtSock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adidas sock"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationX="20dp"
+                android:translationY="120dp" />
+
+            <ImageView
+                android:id="@+id/imgSock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/shorts" />
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
